@@ -16,6 +16,9 @@ return [
 
     'api_key' => env('OPENAI_API_KEY'),
     'organization' => env('OPENAI_ORGANIZATION'),
+    'base_url' => env('OPENAI_BASE_URL'),
+    'chat_model' => env('OPENAI_CHAT_MODEL'),
+    'image_model' => env('OPENAI_IMAGE_MODEL'),
 
     /*
     |--------------------------------------------------------------------------
