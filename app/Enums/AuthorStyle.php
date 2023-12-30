@@ -4,11 +4,13 @@ declare(strict_types=1);
 
 namespace App\Enums;
 
+use ArchTech\Enums\Values;
 use ArchTech\Enums\Options;
 
 enum AuthorStyle: string
 {
     use Options;
+    use Values;
 
      case Narrative = 'a narrative';
      case Authoritative = 'an authoritative';
