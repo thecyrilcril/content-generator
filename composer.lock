@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2e71e7c7a25683e9266abec25bebd733",
+    "content-hash": "db5ddb7ad826c7cbc862535710579076",
     "packages": [
         {
             "name": "archtechx/enums",
@@ -1090,6 +1090,59 @@
                 }
             ],
             "time": "2023-12-03T19:50:20+00:00"
+        },
+        {
+            "name": "juststeveking/http-status-code",
+            "version": "3.0.2",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/JustSteveKing/http-status-code.git",
+                "reference": "1e14f1817f84b2df072359007d0e1b2989fc5ae9"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/JustSteveKing/http-status-code/zipball/1e14f1817f84b2df072359007d0e1b2989fc5ae9",
+                "reference": "1e14f1817f84b2df072359007d0e1b2989fc5ae9",
+                "shasum": ""
+            },
+            "require": {
+                "php": "^8.1"
+            },
+            "require-dev": {
+                "laravel/pint": "^0.2.3",
+                "phpunit/phpunit": "^9.5.4",
+                "thecodingmachine/phpstan-safe-rule": "^1.0"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "JustSteveKing\\StatusCode\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Steve McDougall",
+                    "email": "juststevemcd@gmail.com",
+                    "homepage": "https://www.juststeveking.uk",
+                    "role": "Developer"
+                }
+            ],
+            "description": "A simple class to return correct status codes for http responses",
+            "support": {
+                "issues": "https://github.com/JustSteveKing/http-status-code/issues",
+                "source": "https://github.com/JustSteveKing/http-status-code/tree/3.0.2"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/JustSteveKing",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-10-17T19:47:50+00:00"
         },
         {
             "name": "laravel/framework",
