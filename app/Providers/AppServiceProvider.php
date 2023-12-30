@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\URL;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Http\Client\PendingRequest;
 
 final class AppServiceProvider extends ServiceProvider
 {
@@ -35,5 +36,12 @@ final class AppServiceProvider extends ServiceProvider
         if ($this->app->environment('production')) {
             URL::forceScheme('https');
         }
+
+        PendingRequest::macro(
+            'openai',
+            fn () => PendingRequest::acceptJson()
+                ->baseUrl(config('openai.base_url'))
+                ->withToken(config('openai.api_key'))
+        );
     }
 }
