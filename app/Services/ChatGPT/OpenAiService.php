@@ -24,7 +24,7 @@ class OpenAiService
             'messages' => [
                 [
                     'role' => 'system',
-                    'content' => "When I ask for help to write something, you will reply with $author_style tone"
+                    'content' => "When I ask for help to write something, you will reply with an article in $author_style tone"
                 ],
                 [
                     'role' => 'user',
